@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CanvasViewTask</string>
+    <string name="undo">undo</string>
+    <string name="redo">redo</string>
+    <string name="clear">clear</string>
+    <string name="shape">Shape</string>
+    <string name="pen">Pen</string>
+    <string name="save">Save</string>
+    <string name="share">share</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <com.example.canvasviewtask.CanvasView
+        android:id="@+id/canvas"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center_horizontal" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUndo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/canvas"
+            android:layout_marginStart="20dp"
+            android:text="@string/undo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnRedo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/canvas"
+            app:layout_constraintStart_toEndOf="@+id/btnUndo"
+            android:layout_marginStart="20dp"
+            android:text="@string/redo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/canvas"
+            app:layout_constraintStart_toEndOf="@+id/btnRedo"
+            android:text="@string/clear" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btShape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/btnClear"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/shape" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnPen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnClear"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/pen" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnClear"
+            app:layout_constraintStart_toEndOf="@+id/btnPen"
+
+            android:text="@string/save" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnClear"
+        app:layout_constraintStart_toEndOf="@+id/btSave"
+        android:text="@string/share" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
